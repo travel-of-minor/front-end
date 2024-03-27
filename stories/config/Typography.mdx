@@ -1,0 +1,91 @@
+import { Meta, Typeset } from '@storybook/blocks';
+
+<Meta title="Config/Typography" />
+
+export const typography = {
+  type: {
+    primary: '"Noto Sans"',
+  },
+  weight: {
+    thin: 200,
+    regular: 400,
+    semiBold: 600,
+    bold: 800,
+  },
+  size: {
+    small: 12,
+    body2: 14,
+    body1: 16,
+    h3: 24,
+    h2: 28,
+    h1: 32,
+  },
+};
+
+export const SampleText = '우리는 원한다 일곱 개의 통곡을. 우리는 기억한다 예리코의 화두를.';
+
+# Typography
+
+**Font:** Noto Sans
+
+**Weights:** 200(thin), 400(regular), 600(semiBold), 800(bold)
+
+**Sizes:** 12(small), 14(body2), 16(body1), 24(h3), 28(h2), 32(h1)
+
+## Regular
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.small),
+    Number(typography.size.body2),
+    Number(typography.size.body1),
+    Number(typography.size.h3),
+    Number(typography.size.h2),
+    Number(typography.size.h1),
+  ]}
+  fontWeight={typography.weight.regular}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
+
+## Thin
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.small),
+    Number(typography.size.body1),
+    Number(typography.size.h3),
+    Number(typography.size.h1),
+  ]}
+  fontWeight={typography.weight.thin}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
+
+## SemiBold
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.small),
+    Number(typography.size.body1),
+    Number(typography.size.h3),
+    Number(typography.size.h1),
+  ]}
+  fontWeight={typography.weight.semiBold}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
+
+## Bold
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.small),
+    Number(typography.size.body1),
+    Number(typography.size.h3),
+    Number(typography.size.h1),
+  ]}
+  fontWeight={typography.weight.bold}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
