@@ -1,4 +1,6 @@
 import type { StorybookConfig } from "@storybook/nextjs";
+import * as path from "path";
+import * as tsconfigPlugin from "tsconfig-paths-webpack-plugin";
 
 const config: StorybookConfig = {
   stories: [
@@ -22,6 +24,18 @@ const config: StorybookConfig = {
   staticDirs: ["../public"],
   features: {
     experimentalRSC: true,
+  },
+  webpackFinal: (config) => {
+    if (config.resolve) {
+      config.resolve.plugins = config.resolve.plugins || [];
+      config.resolve.plugins.push(
+        new tsconfigPlugin.TsconfigPathsPlugin({
+          configFile: path.resolve(__dirname, "../tsconfig.json"),
+        })
+      );
+    }
+
+    return config;
   },
 };
 export default config;

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./global.css";
 import globalFonts from "@/config/global-font";
+import { colorThemeClass } from "@/theme/color-theme.css";
+import { typoThemeClass } from "@/theme/typo-theme.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,7 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={globalFonts}>
+    <html
+      lang="ko"
+      className={`${globalFonts} ${typoThemeClass} ${colorThemeClass}`}
+    >
       <body>{children}</body>
     </html>
   );

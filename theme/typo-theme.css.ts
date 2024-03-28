@@ -1,6 +1,6 @@
 import { createTheme } from "@vanilla-extract/css";
 
-export const typoTheme = createTheme({
+const [typoThemeClass, typoThemeVar] = createTheme({
   weight: { thin: "200", regular: "400", semiBold: "600", bold: "800" },
   size: {
     small: "12px",
@@ -12,4 +12,5 @@ export const typoTheme = createTheme({
   },
 });
 
-export default typoTheme
+export { typoThemeClass };
+export default typoThemeVar;
