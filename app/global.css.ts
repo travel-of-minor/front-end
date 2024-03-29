@@ -1,7 +1,7 @@
 import { globalStyle } from "@vanilla-extract/css";
 import typoThemeVar from "@/theme/typo-theme.css";
 
-globalStyle('h1',{
+globalStyle('h1 ',{
   fontSize: typoThemeVar.size.h1,
   fontWeight: typoThemeVar.weight.bold
 })
