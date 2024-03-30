@@ -7,7 +7,8 @@ export default function Home() {
       <h2>sfddsf</h2>
       <h3>sddfs</h3>
       <p>sdfds</p>
-      <Button>dssf</Button>
+      <Button color="negative">dlsdfknldsfnldfsnlndsflnssf</Button>
+      <Button size="large">dlsdfknldsfnldfsnlndsflnssf</Button>
     </main>
   );
 }

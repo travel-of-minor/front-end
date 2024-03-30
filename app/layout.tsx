@@ -3,6 +3,7 @@ import "./global.css";
 import globalFonts from "@/config/global-font";
 import { colorThemeClass } from "@/theme/color-theme.css";
 import { typoThemeClass } from "@/theme/typo-theme.css";
+import { sizeThemeClass } from "@/theme/size-theme.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +18,7 @@ export default function RootLayout({
   return (
     <html
       lang="ko"
-      className={`${globalFonts} ${typoThemeClass} ${colorThemeClass}`}
+      className={`${globalFonts} ${typoThemeClass} ${colorThemeClass} ${sizeThemeClass}`}
     >
       <body>{children}</body>
     </html>

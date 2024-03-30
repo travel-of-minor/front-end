@@ -16,3 +16,7 @@ globalStyle('h3',{
   fontSize: typoThemeVar.size.h3,
   fontWeight: typoThemeVar.weight.semiBold
 })
+
+globalStyle('a',{
+  textDecoration: "none",
+})

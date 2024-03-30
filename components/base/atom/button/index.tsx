@@ -7,7 +7,7 @@ interface PropType
     HTMLButtonElement
   > {
   size?: "small" | "medium" | "large";
-  color?: "primary" | "negative" | "positive" | "warn";
+  color?: "primary" | "negative" | "positive" | "white";
   children?: ReactNode;
   fullWidth?: boolean;
 }

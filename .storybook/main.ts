@@ -30,7 +30,6 @@ const config: StorybookConfig = {
     experimentalRSC: true,
   },
   webpackFinal: (config) => {
-    // for webpack plugin
     if (config.resolve) {
       config.resolve.plugins = config.resolve.plugins || [];
       // for alias @

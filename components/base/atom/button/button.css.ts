@@ -10,6 +10,9 @@ const buttonStyle = recipe({
     alignItems: "center",
     justifyContent: "center",
     cursor: "pointer",
+    ":hover": {
+      opacity: 0.9,
+    },
   },
   variants: {
     color: {
@@ -17,33 +20,35 @@ const buttonStyle = recipe({
         background: colorThemeVar.primary,
         borderColor: colorThemeVar.primary,
       },
-      negative: { background: colorThemeVar.negative, borderColor: colorThemeVar.negative, },
-      positive: { background: colorThemeVar.positive, borderColor: colorThemeVar.positive, },
-      warn: { background: colorThemeVar.warn, borderColor: colorThemeVar.warn, },
+      negative: {
+        background: colorThemeVar.negative,
+        borderColor: colorThemeVar.negative,
+      },
+      positive: {
+        background: colorThemeVar.positive,
+        borderColor: colorThemeVar.positive,
+      },
+      white: {
+        background: "#FFF",
+        color: "#000",
+        borderColor: "#FFF"
+      },
     },
     size: {
       small: {
-        padding: sizeThemeVar.void[4],
-        minWidth: 50,
-        borderRadius: 7,
-        height: 30,
-        gap: 5,
-        fontSize: typoThemeVar.size.body2,
+        padding: `${sizeThemeVar.void[4]} ${sizeThemeVar.void[8]}`,
+        borderRadius: `${sizeThemeVar.void[8]}`,
+        fontSize: typoThemeVar.size.small,
       },
       medium: {
-        padding: sizeThemeVar.void[12],
-        minWidth: 80,
-        borderRadius: 15,
-        height: 36,
-        gap: 10,
-        fontSize: typoThemeVar.size.body1,
+        padding: `${sizeThemeVar.void[8]} ${sizeThemeVar.void[12]}`,
+        borderRadius: `${sizeThemeVar.void[12]}`,
+        fontSize: typoThemeVar.size.body2,
       },
       large: {
-        padding: sizeThemeVar.void[24],
+        padding: `${sizeThemeVar.void[12]} ${sizeThemeVar.void[24]}`,
         minWidth: 110,
-        borderRadius: 20,
-        height: 45,
-        gap: 15,
+        borderRadius: `${sizeThemeVar.void[24]}`,
         fontSize: typoThemeVar.size.body1,
       },
     },
