@@ -4,6 +4,7 @@ import globalFonts from "@/config/global-font";
 import { colorThemeClass } from "@/theme/color-theme.css";
 import { typoThemeClass } from "@/theme/typo-theme.css";
 import { sizeThemeClass } from "@/theme/size-theme.css";
+import Header from "@/components/base/molecule/header";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,7 +21,10 @@ export default function RootLayout({
       lang="ko"
       className={`${globalFonts} ${typoThemeClass} ${colorThemeClass} ${sizeThemeClass}`}
     >
-      <body>{children}</body>
+      <body>
+        <Header/>
+        {children}
+      </body>
     </html>
   );
 }

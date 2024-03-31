@@ -1,6 +1,6 @@
 import { InternalLinkProps } from "@/type/internal-link-props";
 import Link from "next/link";
-import buttonStyle from "../../button/button.css";
+import buttonStyle from "../../atom/button/button.css";
 import Image from "next/image";
 import socialLoginButtonStyle from "./social-login-button.css";
 

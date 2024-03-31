@@ -1,6 +1,6 @@
 import type { Preview } from "@storybook/react";
 import React from "react";
-import { colorThemeClass } from "../theme/color-theme.css";
+import colorThemeVar, { colorThemeClass } from "../theme/color-theme.css";
 import { typoThemeClass } from "../theme/typo-theme.css";
 import { sizeThemeClass } from "../theme/size-theme.css";
 import "../app/global.css";
@@ -18,7 +18,11 @@ const preview: Preview = {
     (Story) => (
       <main
         className={`${typoThemeClass} ${colorThemeClass} ${sizeThemeClass}`}
-        style={{backgroundColor: "#000", minHeight: "100vh", padding: "24px"}}
+        style={{
+          minHeight: "100vh",
+          padding: "24px",
+          background: `linear-gradient(to bottom, ${colorThemeVar.background.dark}, ${colorThemeVar.background.regular})`,
+        }}
       >
         <Story />
       </main>

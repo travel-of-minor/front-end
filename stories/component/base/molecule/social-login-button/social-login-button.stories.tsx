@@ -1,6 +1,6 @@
-import GoogleLoginButton from "@/components/base/atom/molecule/social-login-button/google";
-import KakaoLoginButton from "@/components/base/atom/molecule/social-login-button/kakao";
-import NaverLoginButton from "@/components/base/atom/molecule/social-login-button/naver";
+import GoogleLoginButton from "@/components/base/molecule/social-login-button/google";
+import KakaoLoginButton from "@/components/base/molecule/social-login-button/kakao";
+import NaverLoginButton from "@/components/base/molecule/social-login-button/naver";
 import { Meta, StoryFn } from "@storybook/react";
 
 export default {
