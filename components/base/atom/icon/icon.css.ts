@@ -1,5 +1,6 @@
 import { recipe } from "@vanilla-extract/recipes";
 
+/** not valid color for colored svg */
 export const iconStyle = recipe({
   base: {},
   variants: {
