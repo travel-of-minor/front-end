@@ -3,6 +3,7 @@ import Link from "next/link";
 import buttonStyle from "../../atom/button/button.css";
 import Image from "next/image";
 import socialLoginButtonStyle from "./social-login-button.css";
+import Icon from "../../atom/icon";
 
 interface PropType extends InternalLinkProps {
   text: string;
@@ -20,7 +21,7 @@ export default function SocialLoginButton({
       className={`${buttonStyle({ size: "medium", color: "white", fullWidth: true })} 
       ${socialLoginButtonStyle}`}
     >
-      <Image width={16} height={16} alt={text} src={imageURL} />
+      <Icon size="medium" src={imageURL} alt={text}/>
       {text}
     </Link>
   );
