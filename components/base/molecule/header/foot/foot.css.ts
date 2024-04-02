@@ -1,6 +1,6 @@
 import colorThemeVar from "@/theme/color-theme.css";
-import { globalPadding } from "@/theme/padding-theme.css";
-import { responsive } from "@/theme/responsive.css";
+import { globalPadding } from "@/style/padding-theme.css";
+import { responsive } from "@/style/responsive.css";
 import typoThemeVar from "@/theme/typo-theme.css";
 import { style } from "@vanilla-extract/css";
 

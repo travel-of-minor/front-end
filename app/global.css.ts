@@ -2,7 +2,7 @@ import { globalStyle } from "@vanilla-extract/css";
 import typoThemeVar from "@/theme/typo-theme.css";
 import colorThemeVar from "@/theme/color-theme.css";
 import sizeThemeVar from "@/theme/size-theme.css";
-import { responsive } from "@/theme/responsive.css";
+import { responsive } from "@/style/responsive.css";
 
 globalStyle("h1 ", {
   fontSize: typoThemeVar.size.h1,

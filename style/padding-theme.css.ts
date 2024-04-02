@@ -1,6 +1,6 @@
 import { CSSProperties } from "@vanilla-extract/css";
 import { responsive } from "./responsive.css";
-import sizeThemeVar from "./size-theme.css";
+import sizeThemeVar from "../theme/size-theme.css";
 
 export function globalPadding({
   mobile,

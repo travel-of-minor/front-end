@@ -1,4 +1,4 @@
-import { responsive } from "@/theme/responsive.css";
+import { responsive } from "@/style/responsive.css";
 import { style } from "@vanilla-extract/css";
 
 export const rightStyle = style({

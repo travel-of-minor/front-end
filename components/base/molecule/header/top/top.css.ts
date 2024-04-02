@@ -1,5 +1,5 @@
 import colorThemeVar from "@/theme/color-theme.css";
-import { globalPadding } from "@/theme/padding-theme.css";
+import { globalPadding } from "@/style/padding-theme.css";
 import { style } from "@vanilla-extract/css";
 
 export const topStyle = style({

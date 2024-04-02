@@ -1,7 +1,8 @@
+import { fadeInUpStyle } from "@/style/animation/fade-in-up.css";
 import colorThemeVar from "@/theme/color-theme.css";
 import sizeThemeVar from "@/theme/size-theme.css";
 import typoThemeVar from "@/theme/typo-theme.css";
-import { style } from "@vanilla-extract/css";
+import { keyframes, style } from "@vanilla-extract/css";
 
 export const containerStyle = style({
     display: "flex",
@@ -12,12 +13,23 @@ export const containerStyle = style({
     color: "#fff",
 })
 
-export const titleStyle = style({
-    margin: 0,
-})
+const fadeInUp = keyframes({
+    '0%': {
+      opacity: 0,
+      transform: 'translateY(-10px)'
+    },
+    '100%': {
+      opacity: 1,
+      transform: 'translateY(0)'
+    }
+  });
 
-export const textStyle = style({
+export const titleStyle = style([fadeInUpStyle,{
+    margin: sizeThemeVar.void[4],
+}])
+
+export const textStyle = style([fadeInUpStyle,{
     fontWeight: typoThemeVar.weight.thin,
     margin: sizeThemeVar.void[4],
     color: colorThemeVar.greys[200],
-})
+}])
