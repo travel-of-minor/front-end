@@ -1,8 +1,8 @@
 "use client";
 
-import Icon from "@/components/base/atom/icon";
 import { iconStyle, pStyle, rightStyle } from "./right.css";
 import Link from "next/link";
+import IconButton from "@/components/base/atom/icon-button";
 
 export default function Right() {
   return (
@@ -10,10 +10,12 @@ export default function Right() {
       <Link href="/" className={pStyle}>
         <p>로그인</p>
       </Link>
-      <button className={iconStyle}>
-        <Icon src="/icons/menu-icon.svg" alt="menu" color="white" size="xlarge" />
-      </button>
-      
+      <IconButton
+        src="/icons/menu-icon.svg"
+        name="menu"
+        color="white"
+        size="xlarge"
+      />
     </div>
   );
 }
