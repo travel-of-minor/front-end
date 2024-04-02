@@ -7,12 +7,14 @@ export const iconStyle = recipe({
     color: {
       origin: {},
       black: {
-        filter:
-          "invert(0%) sepia(0%) saturate(7474%) hue-rotate(121deg) brightness(92%) contrast(106%)",
+        // filter:
+        //   "invert(0%) sepia(0%) saturate(7474%) hue-rotate(121deg) brightness(92%) contrast(106%)",
+        filter: "brightness(0) contrast(100)",
       },
       white: {
-        filter:
-          "invert(100%) sepia(100%) saturate(1%) hue-rotate(196deg) brightness(104%) contrast(102%)",
+        // filter:
+        //   "invert(100%) sepia(100%) saturate(1%) hue-rotate(196deg) brightness(104%) contrast(102%)",
+        filter: "brightness(0) invert(1)",
       },
     },
   },

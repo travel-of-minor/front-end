@@ -41,35 +41,26 @@ const Template: StoryFn<typeof Icon> = (args) => (
   <div style={{ display: "flex", width: "100%", height: "100%" }}>
     <div style={divStyle("black")}>
       {sizeArr.map((e, i) => (
-        <Icon
-          {...args}
-          src="/icons/kakao-icon.svg"
-          alt="icon"
-          key={i}
-          size={e}
-        />
+        <div key={i}>
+          <Icon {...args} src="/icons/kakao-icon.svg" alt="icon" size={e} />
+          <Icon {...args} src="/icons/google-icon.svg" alt="icon" size={e} />
+        </div>
       ))}
     </div>
     <div style={divStyle("gray")}>
-    {sizeArr.map((e, i) => (
-        <Icon
-          {...args}
-          src="/icons/kakao-icon.svg"
-          alt="icon"
-          key={i}
-          size={e}
-        />
+      {sizeArr.map((e, i) => (
+        <div key={i}>
+          <Icon {...args} src="/icons/kakao-icon.svg" alt="icon" size={e} />
+          <Icon {...args} src="/icons/google-icon.svg" alt="icon" size={e} />
+        </div>
       ))}
     </div>
     <div style={divStyle("white")}>
-    {sizeArr.map((e, i) => (
-        <Icon
-          {...args}
-          src="/icons/kakao-icon.svg"
-          alt="icon"
-          key={i}
-          size={e}
-        />
+      {sizeArr.map((e, i) => (
+        <div key={i}>
+          <Icon {...args} src="/icons/kakao-icon.svg" alt="icon" size={e} />
+          <Icon {...args} src="/icons/google-icon.svg" alt="icon" size={e} />
+        </div>
       ))}
     </div>
   </div>
