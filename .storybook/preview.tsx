@@ -3,7 +3,13 @@ import React from "react";
 import colorThemeVar, { colorThemeClass } from "../theme/color-theme.css";
 import { typoThemeClass } from "../theme/typo-theme.css";
 import { sizeThemeClass } from "../theme/size-theme.css";
+import { Parameters } from '@storybook/react';
 import "../app/global.css";
+
+export const parameters: Parameters = {
+  actions: { argTypesRegex: "^on[A-Z].*" },
+  layout: 'fullscreen',
+};
 
 const preview: Preview = {
   parameters: {
@@ -16,17 +22,18 @@ const preview: Preview = {
   },
   decorators: [
     (Story) => (
-      <main
+      <div
         className={`${typoThemeClass} ${colorThemeClass} ${sizeThemeClass}`}
         style={{
-          minHeight: "100vh",
-          padding: "24px",
+          height: "100vh",
+          width: "100vw",
+          boxSizing: "border-box",
           background: `linear-gradient(to bottom, ${colorThemeVar.background.dark}, ${colorThemeVar.background.regular})`,
         }}
       >
         <Story />
         <div id = "header-drawer"/>
-      </main>
+      </div>
     ),
   ],
 };

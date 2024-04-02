@@ -4,6 +4,9 @@ import { Meta, StoryObj } from "@storybook/react";
 export default {
   title: "Component/Base/Template/HeaderDrawer",
   component: HeaderDrawer,
+  parameters: {
+    layout: "fullscreen",
+  },
 } as Meta;
 
 type Story = StoryObj<Meta>;

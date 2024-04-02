@@ -3,8 +3,9 @@
 import { Dispatch, SetStateAction, createContext, useState } from "react";
 import DrawerContainer from "../../organism/drawer-container";
 import { containerStyle } from "./header-drawer.css";
+import Top from "./top";
 
-const DrawerContext = createContext<{
+export const HeaderDrawerContext = createContext<{
   isOpen: boolean;
   setIsOpen: Dispatch<SetStateAction<boolean>>;
 }>({ isOpen: false, setIsOpen: () => {} });
@@ -19,13 +20,13 @@ export default function HeaderDrawer({ isOpen, setIsOpen }: PropType) {
     <>
       {isOpen && (
         <DrawerContainer parentId="header-drawer">
-          <DrawerContext.Provider
+          <HeaderDrawerContext.Provider
             value={{ isOpen: isOpen, setIsOpen: setIsOpen }}
           >
             <div className={containerStyle}>
-              
+              <Top/>
             </div>
-          </DrawerContext.Provider>
+          </HeaderDrawerContext.Provider>
         </DrawerContainer>
       )}
     </>
