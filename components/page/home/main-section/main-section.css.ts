@@ -1,3 +1,5 @@
+import colorThemeVar from "@/theme/color-theme.css";
+import sizeThemeVar from "@/theme/size-theme.css";
 import typoThemeVar from "@/theme/typo-theme.css";
 import { style } from "@vanilla-extract/css";
 
@@ -15,5 +17,7 @@ export const titleStyle = style({
 })
 
 export const textStyle = style({
-    fontWeight: typoThemeVar.weight.thin
+    fontWeight: typoThemeVar.weight.thin,
+    margin: sizeThemeVar.void[4],
+    color: colorThemeVar.greys[200],
 })
