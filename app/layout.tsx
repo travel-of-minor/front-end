@@ -27,6 +27,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <div id = "header-drawer"/>
       </body>
     </html>
   );

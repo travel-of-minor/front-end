@@ -25,6 +25,7 @@ const preview: Preview = {
         }}
       >
         <Story />
+        <div id = "header-drawer"/>
       </main>
     ),
   ],

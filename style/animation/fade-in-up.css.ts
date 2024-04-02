@@ -2,8 +2,8 @@ import { keyframes, style } from "@vanilla-extract/css";
 
 const fadeInUpAnimation = keyframes({
   "0%": {
-    opacity: 0,
-    transform: "translateY(10px)",
+    opacity: 0.1,
+    transform: "translateY(5px)",
   },
   "100%": {
     opacity: 1,
@@ -13,6 +13,6 @@ const fadeInUpAnimation = keyframes({
 
 export const fadeInUpStyle = style({
   animationName: fadeInUpAnimation,
-  animationDuration: "1.5s",
+  animationDuration: "1s",
   animationFillMode: "both",
 });

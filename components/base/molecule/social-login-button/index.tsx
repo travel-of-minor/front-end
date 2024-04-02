@@ -20,7 +20,7 @@ export default function SocialLoginButton({
   return (
     <Link
       {...props}
-      className={`${buttonStyle({ size: "medium", color: "white", fullWidth: true })} 
+      className={`${buttonStyle({ size: "large", color: "white", fullWidth: true })} 
       ${socialLoginButtonStyle}`}
     >
       <Icon size="medium" src={imageURL} alt={alt}/>
