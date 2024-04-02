@@ -6,7 +6,7 @@ import Icon from "@/components/base/atom/icon";
 export default function Left(){
     return(
         <Link href="/" className={leftStyle}>
-            <Icon src="/icons/naver-icon.svg" alt="민어의 여행" size="xlarge"/>
+            <Icon src="/icons/naver-icon.svg" alt="민어의 여행" size="xlarge" color="white"/>
             <p className={pStyle}>민어의 여행</p>
         </Link>
     )
