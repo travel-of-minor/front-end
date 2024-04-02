@@ -8,11 +8,13 @@ import Icon from "../../atom/icon";
 interface PropType extends InternalLinkProps {
   text: string;
   imageURL: string;
+  alt?: string;
 }
 
 export default function SocialLoginButton({
   text,
   imageURL,
+  alt = text,
   ...props
 }: PropType) {
   return (
@@ -21,7 +23,7 @@ export default function SocialLoginButton({
       className={`${buttonStyle({ size: "medium", color: "white", fullWidth: true })} 
       ${socialLoginButtonStyle}`}
     >
-      <Icon size="medium" src={imageURL} alt={text}/>
+      <Icon size="medium" src={imageURL} alt={alt}/>
       {text}
     </Link>
   );

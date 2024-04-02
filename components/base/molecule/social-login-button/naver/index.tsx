@@ -6,6 +6,7 @@ export default function NaverLoginButton() {
       text="네이버로 시작하기"
       imageURL="/icons/naver-icon.svg"
       href="/"
+      alt="네이버 로그인"
     />
   );
 }

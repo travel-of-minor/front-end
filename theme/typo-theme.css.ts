@@ -9,6 +9,8 @@ const [typoThemeClass, typoThemeVar] = createTheme({
     h3: "24px",
     h2: "28px",
     h1: "32px",
+    ex2: "48px",
+    ex1: "64px",
   },
 });
 

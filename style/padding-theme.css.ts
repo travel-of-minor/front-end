@@ -13,15 +13,15 @@ export function globalPadding({
 }) {
   return {
     [responsive.mobile]: {
-      padding: `0 ${sizeThemeVar.void[12]}`,
+      padding: `0 ${sizeThemeVar.void[16]}`,
       ...mobile,
     },
     [responsive.tablet]: {
-      padding: `0 ${sizeThemeVar.void[24]}`,
+      padding: `0 ${sizeThemeVar.void[32]}`,
       ...tablet,
     },
     [responsive.desktop]: {
-      padding: `0 ${sizeThemeVar.void[48]}`,
+      padding: `0 ${sizeThemeVar.void[64]}`,
       ...desktop,
     },
   };
