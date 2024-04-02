@@ -5,7 +5,7 @@ export default function NaverLoginButton() {
     <SocialLoginButton
       text="네이버로 시작하기"
       imageURL="/icons/naver-icon.svg"
-      href="www.google.com"
+      href="/"
     />
   );
 }

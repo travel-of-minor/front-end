@@ -11,7 +11,7 @@ export default function Right() {
         <p>로그인</p>
       </Link>
       <button className={iconStyle}>
-        <Icon src="/icons/menu-icon.svg" alt="menu" color="white" size="large" />
+        <Icon src="/icons/menu-icon.svg" alt="menu" color="white" size="xlarge" />
       </button>
       
     </div>

@@ -13,6 +13,7 @@ const buttonStyle = recipe({
     ":hover": {
       opacity: 0.9,
     },
+    boxSizing: 'border-box',
   },
   variants: {
     color: {
