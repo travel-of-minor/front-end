@@ -11,5 +11,18 @@ export const rightStyle = style({
 
 export const pStyle = style({
   color: "#fff",
+  "@media": {
+    [responsive.mobile]: {
+      display: "none",
+    },
+  },
 });
 
+export const iconStyle = style({
+  display: "none !important",
+  "@media": {
+    [responsive.mobile]: {
+      display: "flex !important",
+    }
+  },
+});
