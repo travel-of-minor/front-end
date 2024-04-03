@@ -13,16 +13,3 @@ export const pStyle = style({
   color: "#fff",
 });
 
-export const iconStyle = style({
-  cursor: "pointer",
-  backgroundColor: "transparent",
-  border: "none",
-  "@media": {
-    [responsive.desktop]: {
-      display: "none",
-    },
-    [responsive.tablet]: {
-      display: "none",
-    },
-  },
-});

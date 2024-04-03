@@ -1,6 +1,6 @@
 "use client";
 
-import { iconStyle, pStyle, rightStyle } from "./right.css";
+import { pStyle, rightStyle } from "./right.css";
 import Link from "next/link";
 import IconButton from "@/components/base/atom/icon-button";
 
