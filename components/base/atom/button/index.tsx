@@ -10,6 +10,7 @@ interface PropType
   color?: "primary" | "negative" | "positive" | "white";
   children?: ReactNode;
   fullWidth?: boolean;
+  flat?: boolean;
 }
 
 export default function Button({
@@ -17,12 +18,13 @@ export default function Button({
   color = "primary",
   children,
   fullWidth = false,
+  flat = false,
   ...props
 }: PropType) {
   return (
     <button
       {...props}
-      className={`${props?.className} ${buttonStyle({ color: color, size: size, fullWidth: fullWidth })}`}
+      className={`${props?.className} ${buttonStyle({ color: color, size: size, fullWidth: fullWidth, flat: flat })}`}
     >
       {children}
     </button>

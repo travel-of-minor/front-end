@@ -11,7 +11,7 @@ export default function Top() {
         src="/icons/close-icon.svg"
         name="close"
         color="white"
-        size="huge"
+        size="xlarge"
         onClick={() => {
           setIsOpen(false);
         }}

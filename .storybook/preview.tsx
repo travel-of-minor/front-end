@@ -7,8 +7,8 @@ import { Parameters } from '@storybook/react';
 import "../app/global.css";
 
 export const parameters: Parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
   layout: 'fullscreen',
+  
 };
 
 const preview: Preview = {
@@ -25,6 +25,7 @@ const preview: Preview = {
       <div
         className={`${typoThemeClass} ${colorThemeClass} ${sizeThemeClass}`}
         style={{
+          fontFamily: "Noto Sans",
           height: "100vh",
           width: "100vw",
           boxSizing: "border-box",
