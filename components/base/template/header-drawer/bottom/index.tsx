@@ -1,5 +1,9 @@
 import Icon from "@/components/base/atom/icon";
-import { bottomStyle, textStyle } from "./bottom.css";
+import { bottomStyle, iconStyle, textStyle } from "./bottom.css";
+import Link from "next/link";
+import Button from "@/components/base/atom/button";
+
+const tmpData = ["나", "여행"];
 
 export default function Bottom() {
   return (
@@ -9,11 +13,16 @@ export default function Bottom() {
         alt="icon"
         color="black"
         size="large"
+        className={iconStyle}
       />
-      
-        <p className={textStyle}>나</p>
-        <p className={textStyle}>여행</p>
-      
+
+      {tmpData.map((e, i) => (
+        <Link href="/" key={i} className={textStyle}>
+          <p>{e}</p>
+        </Link>
+      ))}
+      <Button flat fullWidth size="large" className={textStyle}><p>로그인</p></Button>
+      <Button flat fullWidth size="large" className={textStyle} color="negative"><p>로그아웃</p></Button>
     </nav>
   );
 }

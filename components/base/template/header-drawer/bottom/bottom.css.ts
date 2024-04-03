@@ -11,10 +11,14 @@ export const bottomStyle = style({
     height: "100%",
     width: "100%",
     borderRadius: "20px 20px 0 0",
-    "@media":globalPadding({mobile:{paddingTop:16}}),
+    paddingTop: 16,
     display: "flex",
     alignItems: "center",
     flexDirection: "column",
+})
+
+export const iconStyle = style({
+    padding: 12,
 })
 
 export const textStyle = style({
@@ -23,5 +27,5 @@ export const textStyle = style({
     width: "100%",
     textAlign: "center",
     borderBottom: `1px solid #ddd`,
-    padding: `${sizeThemeVar.void[12]} 0`
+    padding: `${sizeThemeVar.void[12]} 0`,
 })

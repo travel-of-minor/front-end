@@ -57,7 +57,7 @@ const buttonStyle = recipe({
       true: { width: "100%" },
     },
     flat: {
-      true: { border: "none" },
+      true: { border: "none", borderRadius: 0 },
     },
   },
 });

@@ -19,6 +19,11 @@ globalStyle("h3", {
   fontWeight: typoThemeVar.weight.semiBold,
 });
 
+globalStyle("p",{
+  padding: 0,
+  margin: 0,
+})
+
 globalStyle("a", {
   textDecoration: "none",
   cursor: "pointer",

@@ -4,7 +4,7 @@ import globalFonts from "@/config/global-font";
 import { colorThemeClass } from "@/theme/color-theme.css";
 import { typoThemeClass } from "@/theme/typo-theme.css";
 import { sizeThemeClass } from "@/theme/size-theme.css";
-import Header from "@/components/base/molecule/header";
+import Header from "@/components/base/template/header";
 
 export const metadata: Metadata = {
   title: "민어의 여행",

@@ -1,8 +1,8 @@
-import Header from "@/components/base/molecule/header";
+import Header from "@/components/base/template/header";
 import { Meta, StoryObj } from "@storybook/react";
 
 export default {
-  title: "Component/Base/Molecule/Header",
+  title: "Component/Base/Template/Header",
   component: Header,
 } as Meta;
 
