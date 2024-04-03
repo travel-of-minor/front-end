@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { iconStyle } from "./icon.css";
+import classNames from "classnames";
 
 interface PropType {
   size?: "small" | "medium" | "large" | "xlarge" | "huge";
@@ -36,7 +37,7 @@ export default function Icon({
       alt={alt}
       width={sizeObj[size]}
       height={sizeObj[size]}
-      className={`${className} ${iconStyle({ color: color })}`}
+      className={classNames(iconStyle({ color: color }), className)}
     />
   );
 }

@@ -4,7 +4,7 @@ import Top from "./top";
 
 export default function Header(){
     return(
-        <header className={`${headerStyle}`}>
+        <header className={headerStyle}>
             <Top/>
             <Foot/>
         </header>

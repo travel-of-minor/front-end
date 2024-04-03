@@ -1,6 +1,7 @@
 import { ButtonHTMLAttributes, DetailedHTMLProps, ReactNode } from "react";
 import { iconButtonStyle } from "./icon-button.css";
 import Icon from "../icon";
+import classNames from "classnames";
 
 interface PropType
   extends DetailedHTMLProps<
@@ -20,7 +21,10 @@ export default function IconButton({
   ...props
 }: PropType) {
   return (
-    <button {...props} className={iconButtonStyle}>
+    <button
+      {...props}
+      className={classNames(iconButtonStyle, props?.className)}
+    >
       <Icon src={src} alt={""} size={size} color={color} />
     </button>
   );

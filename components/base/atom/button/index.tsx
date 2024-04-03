@@ -1,5 +1,6 @@
 import { ButtonHTMLAttributes, DetailedHTMLProps, ReactNode } from "react";
 import buttonStyle from "./button.css";
+import classNames from "classnames";
 
 interface PropType
   extends DetailedHTMLProps<
@@ -24,7 +25,15 @@ export default function Button({
   return (
     <button
       {...props}
-      className={`${props?.className} ${buttonStyle({ color: color, size: size, fullWidth: fullWidth, flat: flat })}`}
+      className={classNames(
+        props?.className,
+        buttonStyle({
+          color: color,
+          size: size,
+          fullWidth: fullWidth,
+          flat: flat,
+        })
+      )}
     >
       {children}
     </button>

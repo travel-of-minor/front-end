@@ -4,7 +4,7 @@ import { topStyle } from "./top.css";
 
 export default function Top() {
   return (
-    <div className={`${topStyle}`}>
+    <div className={topStyle}>
       <Left />
       <Right />
     </div>
