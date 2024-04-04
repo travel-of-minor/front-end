@@ -20,6 +20,7 @@ export default function Right() {
         color="white"
         size="xlarge"
         className={iconStyle}
+        aria-label="menu-label"
         onClick={()=>{setIsDrawerOpen(true)}}
       />
       <HeaderDrawer isOpen={isDrawerOpen} setIsOpen={setIsDrawerOpen} />

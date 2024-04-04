@@ -19,15 +19,15 @@ globalStyle("h3", {
   fontWeight: typoThemeVar.weight.semiBold,
 });
 
-globalStyle("p",{
+globalStyle("p", {
   padding: 0,
   margin: 0,
-})
+});
 
 globalStyle("a", {
   textDecoration: "none",
   cursor: "pointer",
-  color: "#000"
+  color: "#000",
 });
 
 globalStyle("body", {
@@ -36,17 +36,26 @@ globalStyle("body", {
   padding: 0,
 });
 
+globalStyle("ul", {
+  margin: 0,
+  padding: 0,
+});
+
+globalStyle("li", {
+  listStyle: "none",
+});
+
 globalStyle("main", {
   minHeight: "100vh",
-  "@media":{
-    [responsive.mobile]:{
-        padding: `0 ${sizeThemeVar.void[12]}`
+  "@media": {
+    [responsive.mobile]: {
+      padding: `0 ${sizeThemeVar.void[12]}`,
     },
-    [responsive.tablet]:{
-        padding: `0 ${sizeThemeVar.void[24]}`
+    [responsive.tablet]: {
+      padding: `0 ${sizeThemeVar.void[24]}`,
     },
-    [responsive.desktop]:{
-        padding: `0 ${sizeThemeVar.void[48]}`
-    }
-}
-})
+    [responsive.desktop]: {
+      padding: `0 ${sizeThemeVar.void[48]}`,
+    },
+  },
+});

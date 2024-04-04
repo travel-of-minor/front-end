@@ -3,7 +3,7 @@ import { keyframes, style } from "@vanilla-extract/css";
 const slideRightAnimation = keyframes({
   "0%": {
     transform: "translateX(100%)",
-    opacity: 0.5,
+    opacity: 0.6,
   },
   "100%": {
     transform: "translateX(0)",
@@ -12,5 +12,5 @@ const slideRightAnimation = keyframes({
 });
 
 export const slideRightStyle = style({
-  animation: `${slideRightAnimation} 0.5s ease-out forwards`,
+  animation: `${slideRightAnimation} 0.4s ease-out forwards`,
 });
