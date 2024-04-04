@@ -3,6 +3,7 @@ import Image from "next/image";
 import {
   containerStyle,
   imageContainerStyle,
+  imageStyle,
   liStyle,
 } from "./taste-preview.css";
 import PreviewInfo from "./preview-info";
@@ -31,11 +32,9 @@ export default function TastePreview({
         <div className={imageContainerStyle}>
           <Image
             src={imgURL}
-            //width={240}
-            //height={160}
             alt={title}
-            layout="fill"
-            objectFit="contain"
+            fill
+            className={imageStyle}
           />
         </div>
         <PreviewInfo title={title} author={author} description={description} />

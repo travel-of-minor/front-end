@@ -29,3 +29,7 @@ export const containerStyle = style({
     display: "flex",
     
 })
+
+export const imageStyle = style({
+    objectFit:"contain",
+})
