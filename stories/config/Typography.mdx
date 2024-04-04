@@ -1,4 +1,4 @@
-import { Meta, Typeset } from '@storybook/blocks';
+import { Meta, Typeset } from "@storybook/blocks";
 
 <Meta title="Config/Typography" />
 
@@ -22,7 +22,8 @@ export const typography = {
   },
 };
 
-export const SampleText = '우리는 원한다 일곱 개의 통곡을. 우리는 기억한다 예리코의 화두를.';
+export const SampleText =
+  "우리는 원한다 일곱 개의 통곡을. 우리는 기억한다 예리코의 화두를.";
 
 # Typography
 
@@ -31,6 +32,22 @@ export const SampleText = '우리는 원한다 일곱 개의 통곡을. 우리�
 **Weights:** 200(thin), 400(regular), 600(semiBold), 800(bold)
 
 **Sizes:** 12(small), 14(body2), 16(body1), 24(h3), 28(h2), 32(h1)
+
+## Thin
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.small),
+    Number(typography.size.body2),
+    Number(typography.size.body1),
+    Number(typography.size.h3),
+    Number(typography.size.h2),
+    Number(typography.size.h1),
+  ]}
+  fontWeight={typography.weight.thin}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
 
 ## Regular
 
@@ -48,27 +65,15 @@ export const SampleText = '우리는 원한다 일곱 개의 통곡을. 우리�
   fontFamily={typography.type.primary}
 />
 
-## Thin
-
-<Typeset
-  fontSizes={[
-    Number(typography.size.small),
-    Number(typography.size.body1),
-    Number(typography.size.h3),
-    Number(typography.size.h1),
-  ]}
-  fontWeight={typography.weight.thin}
-  sampleText={SampleText}
-  fontFamily={typography.type.primary}
-/>
-
 ## SemiBold
 
 <Typeset
   fontSizes={[
     Number(typography.size.small),
+    Number(typography.size.body2),
     Number(typography.size.body1),
     Number(typography.size.h3),
+    Number(typography.size.h2),
     Number(typography.size.h1),
   ]}
   fontWeight={typography.weight.semiBold}
@@ -81,8 +86,10 @@ export const SampleText = '우리는 원한다 일곱 개의 통곡을. 우리�
 <Typeset
   fontSizes={[
     Number(typography.size.small),
+    Number(typography.size.body2),
     Number(typography.size.body1),
     Number(typography.size.h3),
+    Number(typography.size.h2),
     Number(typography.size.h1),
   ]}
   fontWeight={typography.weight.bold}
