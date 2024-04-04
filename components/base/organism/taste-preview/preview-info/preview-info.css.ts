@@ -7,7 +7,6 @@ import { style } from "@vanilla-extract/css";
 
 export const containerStyle = style({
   color: `${colorThemeVar.greys[200]}`,
-  flexGrow: 1,
   padding: `0 ${sizeThemeVar.void[4]}`,
   fontSize: typoThemeVar.size.small,
   fontWeight: typoThemeVar.weight.thin,
@@ -17,6 +16,8 @@ export const containerStyle = style({
       padding: `${sizeThemeVar.void[4]} ${sizeThemeVar.void[8]}`,
     },
   },
+  flexGrow: 1,
+  flexBasis: 0,
 });
 
 export const titleStyle = style([

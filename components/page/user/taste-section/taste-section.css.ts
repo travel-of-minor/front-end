@@ -3,6 +3,7 @@ import { style } from "@vanilla-extract/css";
 
 export const tasteSectionStyle = style({
     flexGrow: 1,
+    flexBasis: 0,
 })
 
 export const tasteListStyle = style({

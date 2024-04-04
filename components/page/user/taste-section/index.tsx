@@ -10,9 +10,10 @@ export default function TasteSection() {
     <section className={tasteSectionStyle}>
       <ul className={tasteListStyle}>
         <TastePreview
-          title="임시 제목"
+          title="임시 제목 임시 제목 임시 제목 임시 제목 임시 제목 임시 제목 임시 제목 임시 제목 임시 제목 임시 제목 임시 제목 임시 제목 임시 제목 임시 제목 임시 제목 임시 제목 임시 제목 임시 제목 임시 제목 임시 제목 임시 제목 임시 제목"
           imgURL="/images/brand-image.webp"
           id={"1"}
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies mauris et cursus lacinia. Donec quis risus quis neque facilisis porttitor. Curabitur ut facilisis orci. In consequat porttitor odio, et rutrum massa elementum id. "
         />
         <TastePreview
           title="임시 제목"
