@@ -11,7 +11,7 @@ export default function UserSection({
 }: PropType) {
   return (
     <section className={userSectionStyle}>
-      <h1 className={nameStyle}>{name}</h1>
+      <h3 className={nameStyle}>{name}</h3>
       <p className={bioStyle}>{bio}</p>
     </section>
   );
