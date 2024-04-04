@@ -63,5 +63,5 @@ globalStyle("main", {
   flexGrow: 1,
   width: "100%",
   boxSizing: "border-box",
-  background: `linear-gradient(to bottom, ${colorThemeVar.background.dark}, ${colorThemeVar.background.regular})`,
+  background: `linear-gradient(to top, ${colorThemeVar.background.dark}, ${colorThemeVar.background.regular})`,
 });
