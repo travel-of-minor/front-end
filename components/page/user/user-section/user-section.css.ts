@@ -6,15 +6,14 @@ import typoThemeVar from "@/theme/typo-theme.css";
 import { style } from "@vanilla-extract/css";
 
 export const userSectionStyle = style({
-  flex: 0.6,
-  display: "flex",
-  flexDirection: "column",
   color: "#fff",
-  justifyContent: "center",
-  alignItems: "center",
+  padding: sizeThemeVar.void[64],
   "@media":{
     [responsive.mobile]:{
-      flex: 0.3,
+      padding: `${sizeThemeVar.void[64]} ${sizeThemeVar.void[8]}`,
+    },
+    [responsive.tablet]:{
+      padding: `${sizeThemeVar.void[64]} ${sizeThemeVar.void[16]}`,
     }
   }
 });

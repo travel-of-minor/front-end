@@ -1,14 +1,8 @@
-import { responsive } from "@/style/responsive.css";
 import sizeThemeVar from "@/theme/size-theme.css";
 import { style } from "@vanilla-extract/css";
 
 export const tasteSectionStyle = style({
-    flex: 1.4,
-    "@media":{
-        [responsive.mobile]:{
-            flex: 1.7,
-        }
-    }
+    flexGrow: 1,
 })
 
 export const tasteListStyle = style({
