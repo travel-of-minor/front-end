@@ -1,4 +1,5 @@
 import { fadeInUpStyle } from "@/style/animation/fade-in-up.css";
+import { responsive } from "@/style/responsive.css";
 import colorThemeVar from "@/theme/color-theme.css";
 import sizeThemeVar from "@/theme/size-theme.css";
 import typoThemeVar from "@/theme/typo-theme.css";
@@ -11,6 +12,11 @@ export const userSectionStyle = style({
   color: "#fff",
   justifyContent: "center",
   alignItems: "center",
+  "@media":{
+    [responsive.mobile]:{
+      flex: 0.3,
+    }
+  }
 });
 
 export const nameStyle = style({

@@ -1,3 +1,4 @@
+import { limitTextLines } from "@/style/limit-text-lines.css";
 import { responsive } from "@/style/responsive.css";
 import colorThemeVar from "@/theme/color-theme.css";
 import sizeThemeVar from "@/theme/size-theme.css";
@@ -13,19 +14,23 @@ export const containerStyle = style({
   "@media": {
     [responsive.desktop]: {
       fontSize: typoThemeVar.size.body2,
+      padding: `${sizeThemeVar.void[4]} ${sizeThemeVar.void[8]}`,
     },
   },
 });
 
-export const titleStyle = style({
-  color: "#fff",
-  fontSize: typoThemeVar.size.body2,
-  "@media": {
-    [responsive.desktop]: {
-      fontSize: typoThemeVar.size.body1,
+export const titleStyle = style([
+  {
+    color: "#fff",
+    fontSize: typoThemeVar.size.body2,
+    "@media": {
+      [responsive.desktop]: {
+        fontSize: typoThemeVar.size.body1,
+      },
     },
   },
-});
+  limitTextLines({ line: 2 }),
+]);
 
 export const authorStyle = style({
   borderBottom: `1px solid ${colorThemeVar.greys[300]}`,
@@ -34,4 +39,4 @@ export const authorStyle = style({
   padding: `${sizeThemeVar.void[2]} 0`,
 });
 
-export const descriptionStyle = style({});
+export const descriptionStyle = style([{}, limitTextLines({ line: 2 })]);

@@ -12,5 +12,5 @@ const slideRightAnimation = keyframes({
 });
 
 export const slideRightStyle = style({
-  animation: `${slideRightAnimation} 0.4s ease-out forwards`,
+  animation: `${slideRightAnimation} 0.2s ease-out forwards`,
 });

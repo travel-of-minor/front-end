@@ -31,9 +31,12 @@ globalStyle("a", {
 });
 
 globalStyle("body", {
-  background: `linear-gradient(to bottom, ${colorThemeVar.background.dark}, ${colorThemeVar.background.regular})`,
   margin: 0,
   padding: 0,
+  height: "100vh",
+  overflowY: "scroll",
+  display: "flex",
+  flexDirection: "column",
 });
 
 globalStyle("ul", {
@@ -46,7 +49,6 @@ globalStyle("li", {
 });
 
 globalStyle("main", {
-  minHeight: "100vh",
   "@media": {
     [responsive.mobile]: {
       padding: `0 ${sizeThemeVar.void[12]}`,
@@ -58,4 +60,8 @@ globalStyle("main", {
       padding: `0 ${sizeThemeVar.void[48]}`,
     },
   },
+  flexGrow: 1,
+  width: "100%",
+  boxSizing: "border-box",
+  background: `linear-gradient(to bottom, ${colorThemeVar.background.dark}, ${colorThemeVar.background.regular})`,
 });
