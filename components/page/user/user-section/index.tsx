@@ -1,4 +1,5 @@
 import { bioStyle, nameStyle, userSectionStyle } from "./user-section.css";
+import ButtonContainer from "./button-container";
 
 interface PropType {
   name?: string;
@@ -13,6 +14,7 @@ export default function UserSection({
     <section className={userSectionStyle}>
       <h3 className={nameStyle}>{name}</h3>
       <p className={bioStyle}>{bio}</p>
+      <ButtonContainer id="1"/>
     </section>
   );
 }

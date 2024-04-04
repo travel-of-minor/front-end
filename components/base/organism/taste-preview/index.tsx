@@ -1,6 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import { containerStyle, imageContainerStyle, liStyle } from "./taste-preview.css";
+import {
+  containerStyle,
+  imageContainerStyle,
+  liStyle,
+} from "./taste-preview.css";
 import PreviewInfo from "./preview-info";
 
 interface PropType {
@@ -21,7 +25,7 @@ export default function TastePreview({
   return (
     <li className={liStyle}>
       <Link
-        href={{ pathname: "opus", query: { id: id } }}
+        href={`/opus/${id}`}
         className={containerStyle}
       >
         <div className={imageContainerStyle}>

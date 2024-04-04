@@ -12,5 +12,5 @@ export const tasteListStyle = style({
     display: "flex",
     flexDirection: "column",
     gap: sizeThemeVar.void[16],
-    padding: `${sizeThemeVar.void[16]} 0`
+    padding: `${sizeThemeVar.void[32]} 0`
 })
