@@ -1,8 +1,7 @@
 import { globalStyle } from "@vanilla-extract/css";
 import typoThemeVar from "@/theme/typo-theme.css";
 import colorThemeVar from "@/theme/color-theme.css";
-import sizeThemeVar from "@/theme/size-theme.css";
-import { responsive } from "@/style/responsive.css";
+import { globalPadding } from "@/style/padding-theme.css";
 
 globalStyle("h1 ", {
   fontSize: typoThemeVar.size.h1,
@@ -49,17 +48,7 @@ globalStyle("li", {
 });
 
 globalStyle("main", {
-  "@media": {
-    [responsive.mobile]: {
-      padding: `0 ${sizeThemeVar.void[12]}`,
-    },
-    [responsive.tablet]: {
-      padding: `0 ${sizeThemeVar.void[24]}`,
-    },
-    [responsive.desktop]: {
-      padding: `0 ${sizeThemeVar.void[48]}`,
-    },
-  },
+  "@media": globalPadding({}),
   flexGrow: 1,
   width: "100%",
   boxSizing: "border-box",
