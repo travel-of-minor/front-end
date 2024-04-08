@@ -24,6 +24,7 @@ export const titleStyle = style([
   {
     color: "#fff",
     fontSize: typoThemeVar.size.body2,
+    fontWeight: typoThemeVar.weight.regular,
     "@media": {
       [responsive.desktop]: {
         fontSize: typoThemeVar.size.body1,
