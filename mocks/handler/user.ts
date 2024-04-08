@@ -4,9 +4,7 @@ import { http, HttpResponse } from "msw";
 export const userHandler = http.get(
   `${process.env.NEXT_PUBLIC_API_URL}/user/:id`,
   ({ params }) => {
-    // URL 파라미터에서 userId 추출
     const { id } = params;
-    // userId에 따라 다른 응답 반환
     const users: UserType[] = [
       {
         id: "1",
@@ -16,6 +14,7 @@ export const userHandler = http.get(
           {
             id: "1",
             userId: "1",
+            userName: "나윤상",
             title: "잘자 푼푼",
             author: "아사노 이니오",
             imgURL:
@@ -25,15 +24,18 @@ export const userHandler = http.get(
           {
             id: "2",
             userId: "1",
+            userName: "나윤상",
             title: "Komm, süsser Tod",
             author: "아리안 슈라이버",
             imgURL:
               "https://i1.sndcdn.com/artworks-000290083122-e4fiug-t500x500.jpg",
-            description: "모든것이 망가지는 엔딩",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies mauris et cursus lacinia. Donec quis risus quis neque facilisis porttitor. Curabitur ut facilisis orci. In consequat porttitor odio, et rutrum massa elementum id.",
           },
           {
             id: "3",
             userId: "1",
+            userName: "나윤상",
             title: "극장판 짱구는 못말려: 어른제국의 역습",
             author: "하라 케이이치",
             imgURL:
@@ -43,6 +45,7 @@ export const userHandler = http.get(
           {
             id: "4",
             userId: "1",
+            userName: "나윤상",
             title: "잘자 푼푼",
             author: "아사노 이니오",
             imgURL:
@@ -52,6 +55,7 @@ export const userHandler = http.get(
           {
             id: "5",
             userId: "1",
+            userName: "나윤상",
             title: "Komm, süsser Tod",
             author: "아리안 슈라이버",
             imgURL:
@@ -61,6 +65,7 @@ export const userHandler = http.get(
           {
             id: "6",
             userId: "1",
+            userName: "나윤상",
             title: "극장판 짱구는 못말려: 어른제국의 역습",
             author: "하라 케이이치",
             imgURL:
@@ -82,6 +87,6 @@ export const userHandler = http.get(
     }
 
     // not found
-    return new HttpResponse("Not found", { status: 404 });
+    return new HttpResponse(null, { status: 404 });
   }
 );
