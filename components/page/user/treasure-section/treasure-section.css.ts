@@ -1,12 +1,12 @@
 import sizeThemeVar from "@/theme/size-theme.css";
 import { style } from "@vanilla-extract/css";
 
-export const tasteSectionStyle = style({
+export const treasureSectionStyle = style({
     flexGrow: 1,
     flexBasis: 0,
 })
 
-export const tasteListStyle = style({
+export const treasureListStyle = style({
     height: "100%",
     boxSizing: "border-box",
     display: "flex",

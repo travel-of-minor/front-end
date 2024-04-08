@@ -1,4 +1,4 @@
-import TasteSection from "@/components/page/user/taste-section";
+import TreasureSection from "@/components/page/user/treasure-section";
 import UserSection from "@/components/page/user/user-section";
 import { mainStyle } from "@/style/css/main.css";
 import { UserType } from "@/type/api/user";
@@ -14,7 +14,7 @@ export default async function Page({ params }: PropType) {
   return (
     <main className={mainStyle}>
       <UserSection name={userData.name} bio={userData.bio} />
-      <TasteSection data={userData.treasures} />
+      <TreasureSection data={userData.treasures} />
     </main>
   );
 }

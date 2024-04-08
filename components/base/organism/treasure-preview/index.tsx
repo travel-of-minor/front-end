@@ -5,7 +5,7 @@ import {
   imageContainerStyle,
   imageStyle,
   liStyle,
-} from "./taste-preview.css";
+} from "./treasure-preview.css"
 import PreviewInfo from "./preview-info";
 
 interface PropType {
@@ -16,7 +16,7 @@ interface PropType {
   description?: string;
 }
 
-export default function TastePreview({
+export default function TreasurePreview({
   imgURL,
   id,
   title,
@@ -26,7 +26,7 @@ export default function TastePreview({
   return (
     <li className={liStyle}>
       <Link
-        href={`/opus/${id}`}
+        href={`/treasure/${id}`}
         className={containerStyle}
       >
         <div className={imageContainerStyle}>

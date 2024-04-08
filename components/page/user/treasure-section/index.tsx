@@ -1,6 +1,5 @@
-import Image from "next/image";
-import { tasteListStyle, tasteSectionStyle } from "./taste-section.css";
-import TastePreview from "@/components/base/organism/taste-preview";
+import TreasurePreview from "@/components/base/organism/treasure-preview";
+import { treasureListStyle, treasureSectionStyle } from "./treasure-section.css";
 import { TreasureType } from "@/type/api/treasure";
 
 const tmpURL =
@@ -10,12 +9,12 @@ interface PropType {
   data: TreasureType[];
 }
 
-export default function TasteSection({ data }: PropType) {
+export default function TreasureSection({ data }: PropType) {
   return (
-    <section className={tasteSectionStyle}>
-      <ul className={tasteListStyle}>
+    <section className={treasureSectionStyle}>
+      <ul className={treasureListStyle}>
         {data.map((e) => (
-          <TastePreview
+          <TreasurePreview
             title={e.title}
             imgURL={e.imgURL}
             id={e.id}
