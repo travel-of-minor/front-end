@@ -5,6 +5,7 @@ import { colorThemeClass } from "@/theme/color-theme.css";
 import { typoThemeClass } from "@/theme/typo-theme.css";
 import { sizeThemeClass } from "@/theme/size-theme.css";
 import Header from "@/components/base/template/header";
+import IntegrateMSW from "@/mocks/integrate-msw";
 
 export const metadata: Metadata = {
   title: "민어의 여행",
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -25,9 +26,11 @@ export default function RootLayout({
       className={`${globalFonts} ${typoThemeClass} ${colorThemeClass} ${sizeThemeClass}`}
     >
       <body>
-        <Header />
-        {children}
-        <div id = "header-drawer"/>
+        <IntegrateMSW>
+          <Header />
+          {children}
+          <div id="header-drawer" />
+        </IntegrateMSW>
       </body>
     </html>
   );

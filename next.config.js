@@ -11,6 +11,7 @@ const nextConfig = {
       },
     ],
   },
+  experimental: { instrumentationHook: true, },
 };
 
 module.exports = withVanillaExtract(nextConfig);

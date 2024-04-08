@@ -5,8 +5,7 @@ export const userHandler = http.get(
   `${process.env.NEXT_PUBLIC_API_URL}/user/:id`,
   ({ params }) => {
     // URL 파라미터에서 userId 추출
-    const { userId } = params;
-
+    const { id } = params;
     // userId에 따라 다른 응답 반환
     const users: UserType[] = [
       {
@@ -77,12 +76,12 @@ export const userHandler = http.get(
         treasures: [],
       },
     ];
-    const user = users.find((e) => e.id === userId);
+    const user = users.find((e) => e.id === id);
     if (user) {
       return HttpResponse.json(user);
     }
 
     // not found
-    return new HttpResponse("유저 정보를 찾을 수 없습니다.", { status: 404 });
+    return new HttpResponse("Not found", { status: 404 });
   }
 );
