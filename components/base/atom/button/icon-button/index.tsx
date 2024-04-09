@@ -13,12 +13,14 @@ export default function IconButton({
   size = "medium",
   iconSize = "medium",
   iconColor = "white",
+  children,
   src,
   ...props
 }: PropType) {
   return (
-    <Button flat fit color="transparent" {...props}>
+    <Button fit color="transparent" {...props}>
       <Icon src={src} alt={""} size={iconSize} color={iconColor} />
+      {children}
     </Button>
   );
 }

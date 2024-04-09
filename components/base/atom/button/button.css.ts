@@ -14,6 +14,7 @@ const buttonStyle = recipe({
       opacity: 0.9,
     },
     boxSizing: "border-box",
+    lineHeight: 0,
   },
   variants: {
     color: {
@@ -36,8 +37,8 @@ const buttonStyle = recipe({
       },
       transparent: {
         background: "transparent",
-        borderColor: "transparent",
-        color: "#000"
+        border: "none",
+        color: "#fff"
       }
     },
     size: {
@@ -45,17 +46,20 @@ const buttonStyle = recipe({
         padding: `${sizeThemeVar.void[4]} ${sizeThemeVar.void[8]}`,
         borderRadius: `${sizeThemeVar.void[8]}`,
         fontSize: typoThemeVar.size.small,
+        gap: sizeThemeVar.void[8],
       },
       medium: {
         padding: `${sizeThemeVar.void[8]} ${sizeThemeVar.void[12]}`,
         borderRadius: `${sizeThemeVar.void[12]}`,
         fontSize: typoThemeVar.size.body2,
+        gap: sizeThemeVar.void[12],
       },
       large: {
         padding: `${sizeThemeVar.void[12]} ${sizeThemeVar.void[24]}`,
         minWidth: 110,
         borderRadius: `${sizeThemeVar.void[24]}`,
         fontSize: typoThemeVar.size.body1,
+        gap: sizeThemeVar.void[24],
       },
     },
     fullWidth: {

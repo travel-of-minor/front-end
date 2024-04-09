@@ -2,6 +2,7 @@
 
 import Button from "@/components/base/atom/button";
 import { buttonStyle, containerStyle } from "./button-container.css";
+import IconButton from "@/components/base/atom/button/icon-button";
 
 interface PropType {
   id: string;
@@ -10,22 +11,8 @@ interface PropType {
 export default function ButtonContainer({ id }: PropType) {
   return (
     <div className={containerStyle}>
-      <Button
-        name="내 정보 수정"
-        className={buttonStyle}
-        onClick={() => {
-          console.log(
-            fetch(`${process.env.NEXT_PUBLIC_API_URL}/user/${id}`).then((res) =>
-              res.json()
-            )
-          );
-        }}
-      >
-        내 정보 수정
-      </Button>
-      <Button color="positive" name="새 보물 추가" className={buttonStyle}>
-        새 보물 추가
-      </Button>
+      <IconButton src="/icons/edit-icon.svg" fit={false}>정보 수정하기</IconButton>
+      <IconButton src="/icons/add-icon.svg" fit={false}>보물 추가하기</IconButton>
     </div>
   );
 }
