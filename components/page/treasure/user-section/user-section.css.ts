@@ -15,7 +15,7 @@ export const sectionStyle = style({
     padding: `0 ${sizeThemeVar.void[12]} ${sizeThemeVar.void[32]}  ${sizeThemeVar.void[12]}`,
     color: "#fff",
     boxSizing: "border-box",
-    backgroundColor: colorThemeVar.background.dark,
+    
 })
 
 export const userNameStyle = style({

@@ -39,7 +39,7 @@ export const nameStyle = style({
 
 export const bioStyle = style([
   fadeInUpStyle,
-  limitTextLines({line:2}),
+  limitTextLines({line:3}),
   {
     width: "100%",
     fontWeight: typoThemeVar.weight.thin,

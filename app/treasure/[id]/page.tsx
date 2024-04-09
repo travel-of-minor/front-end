@@ -1,6 +1,6 @@
-import InfoSection from "@/components/page/opus/info-section";
+import InfoSection from "@/components/page/treasure/info-section";
 import { mainStyle } from "./page.css";
-import UserSection from "@/components/page/opus/user-section";
+import UserSection from "@/components/page/treasure/user-section";
 import { TreasureType } from "@/type/api/treasure";
 
 interface PropType {

@@ -34,6 +34,11 @@ const buttonStyle = recipe({
         color: "#000",
         borderColor: "#FFF",
       },
+      transparent: {
+        background: "transparent",
+        borderColor: "transparent",
+        color: "#000"
+      }
     },
     size: {
       small: {
@@ -59,6 +64,12 @@ const buttonStyle = recipe({
     flat: {
       true: { border: "none", borderRadius: 0 },
     },
+    fit: {
+      true: {
+        padding: 0,
+        minWidth: 0,
+      }
+    }
   },
 });
 
