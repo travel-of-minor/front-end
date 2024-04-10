@@ -1,4 +1,4 @@
 import { treasureHandler } from "./handler/treasure";
-import { userHandler } from "./handler/user";
+import { treasureByUserHandler, userHandler } from "./handler/user";
 
-export const handlers = [userHandler,treasureHandler];
+export const handlers = [userHandler,treasureHandler,treasureByUserHandler];

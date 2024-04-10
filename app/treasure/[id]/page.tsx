@@ -17,6 +17,7 @@ export default async function Page({ params }: PropType) {
         title={treasureData.title}
         author={treasureData.author}
         imgURL={treasureData.imgURL}
+        publisher={treasureData.publisher}
       />
       <UserSection
         userName={treasureData.userName}

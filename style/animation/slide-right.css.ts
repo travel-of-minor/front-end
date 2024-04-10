@@ -1,6 +1,6 @@
 import { keyframes, style } from "@vanilla-extract/css";
 
-const slideRightAnimation = keyframes({
+export const slideRightAnimation = keyframes({
   "0%": {
     transform: "translateX(100%)",
     opacity: 0.6,

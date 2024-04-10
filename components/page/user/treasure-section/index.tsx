@@ -5,9 +5,6 @@ import {
 } from "./treasure-section.css";
 import { TreasureType } from "@/type/api/treasure";
 
-const tmpURL =
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDehPCOiUa8t0BIQYhK5g3GvH57RDH3b-aIgewbVEbxg&s";
-
 interface PropType {
   id: string;
 }

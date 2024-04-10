@@ -6,4 +6,6 @@ export interface TreasureType{
     author: string;
     imgURL: string;
     description: string;
+    publisher: string;
+    type?: "general" | "foreign" | "comic" | "others";
 }

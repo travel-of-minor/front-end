@@ -54,3 +54,15 @@ export const authorStyle = style({
     },
   },
 });
+
+export const publisherStyle = style({
+  width: "100%",
+  fontWeight: typoThemeVar.weight.thin,
+  fontSize: typoThemeVar.size.body2,
+  margin: `${sizeThemeVar.void[8]} 0`,
+  "@media": {
+    [responsive.mobile]: {
+      fontSize: typoThemeVar.size.small,
+    },
+  },
+});

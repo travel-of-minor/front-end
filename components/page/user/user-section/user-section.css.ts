@@ -11,10 +11,12 @@ export const userSectionStyle = style({
   padding: `${sizeThemeVar.void[64]} 0`,
   width: 280,
   boxSizing: "border-box",
+  marginRight: sizeThemeVar.void[12],
   "@media":{
     [responsive.mobile]:{
       padding: `${sizeThemeVar.void[64]} ${sizeThemeVar.void[8]}`,
       width: "100%",
+      marginRight: 0,
     },
     [responsive.tablet]:{
       width: 240,
