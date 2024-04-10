@@ -20,7 +20,7 @@ export const footStyle = style({
 });
 
 export const anchorStyle = style({
-  width: "48px",
+  
   display: "flex",
   alignItems: "center",
   justifyContent: "center",

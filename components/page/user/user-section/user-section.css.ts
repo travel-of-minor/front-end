@@ -11,10 +11,12 @@ export const userSectionStyle = style({
   padding: `${sizeThemeVar.void[64]} 0`,
   width: 280,
   boxSizing: "border-box",
+  marginRight: sizeThemeVar.void[12],
   "@media":{
     [responsive.mobile]:{
       padding: `${sizeThemeVar.void[64]} ${sizeThemeVar.void[8]}`,
       width: "100%",
+      marginRight: 0,
     },
     [responsive.tablet]:{
       width: 240,
@@ -25,7 +27,8 @@ export const userSectionStyle = style({
 export const nameStyle = style({
   width: "100%",
   margin: 0,
-  padding: `${sizeThemeVar.void[8]} 0`,
+  padding: `${sizeThemeVar.void[12]} 0`,
+  marginBottom: sizeThemeVar.void[12],
   borderBottom: `1px solid ${colorThemeVar.greys[300]}`,
   boxSizing:"border-box",
   fontWeight: typoThemeVar.weight.semiBold,
@@ -39,7 +42,7 @@ export const nameStyle = style({
 
 export const bioStyle = style([
   fadeInUpStyle,
-  limitTextLines({line:2}),
+  limitTextLines({line:3}),
   {
     width: "100%",
     fontWeight: typoThemeVar.weight.thin,

@@ -2,16 +2,17 @@ import { ButtonHTMLAttributes, DetailedHTMLProps, ReactNode } from "react";
 import buttonStyle from "./button.css";
 import classNames from "classnames";
 
-interface PropType
+export interface ButtonPropType
   extends DetailedHTMLProps<
     ButtonHTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
   > {
   size?: "small" | "medium" | "large";
-  color?: "primary" | "negative" | "positive" | "white";
+  color?: "primary" | "negative" | "positive" | "white" | "transparent";
   children?: ReactNode;
   fullWidth?: boolean;
   flat?: boolean;
+  fit?: boolean;
 }
 
 export default function Button({
@@ -20,8 +21,9 @@ export default function Button({
   children,
   fullWidth = false,
   flat = false,
+  fit = false,
   ...props
-}: PropType) {
+}: ButtonPropType) {
   return (
     <button
       {...props}
@@ -32,6 +34,7 @@ export default function Button({
           size: size,
           fullWidth: fullWidth,
           flat: flat,
+          fit: fit,
         })
       )}
     >

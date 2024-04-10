@@ -1,18 +1,19 @@
 import { responsive } from "@/style/responsive.css";
+import colorThemeVar from "@/theme/color-theme.css";
 import sizeThemeVar from "@/theme/size-theme.css";
 import typoThemeVar from "@/theme/typo-theme.css";
 import { style } from "@vanilla-extract/css";
 
 export const containerStyle = style({
-    margin: `${sizeThemeVar.void[16]} 0`,
+    gap: sizeThemeVar.void[12],
     display: "flex",
-    gap: sizeThemeVar.void[16]
+    flexWrap: "wrap",
+    padding: `${sizeThemeVar.void[24]} 0`,
 })
 
 export const buttonStyle = style({
-    "@media":{
-        [responsive.tablet]:{
-            fontSize:typoThemeVar.size.small,
-        }
-    }
+    borderBottom: `1px solid ${colorThemeVar.greys[300]} !important`,
+    flex: 1,
+    maxWidth: 140,
 })
+

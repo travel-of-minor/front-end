@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { HeaderDrawerContext } from "..";
-import IconButton from "@/components/base/atom/icon-button";
+import IconButton from "@/components/base/atom/button/icon-button";
 import { topStyle } from "./top.css";
 
 export default function Top() {
@@ -10,11 +10,12 @@ export default function Top() {
       <IconButton
         src="/icons/close-icon.svg"
         name="close"
-        color="white"
-        size="xlarge"
+        iconColor="white"
+        iconSize="xlarge"
         onClick={() => {
           setIsOpen(false);
         }}
+        flat
       />
     </div>
   );

@@ -24,6 +24,7 @@ export const titleStyle = style([
   {
     color: "#fff",
     fontSize: typoThemeVar.size.body2,
+    fontWeight: typoThemeVar.weight.regular,
     "@media": {
       [responsive.desktop]: {
         fontSize: typoThemeVar.size.body1,
@@ -36,8 +37,8 @@ export const titleStyle = style([
 export const authorStyle = style({
   borderBottom: `1px solid ${colorThemeVar.greys[300]}`,
   width: "100%",
-  margin: `${sizeThemeVar.void[2]} 0`,
-  padding: `${sizeThemeVar.void[2]} 0`,
+  margin: `${sizeThemeVar.void[4]} 0`,
+  padding: `${sizeThemeVar.void[4]} 0`,
 });
 
 export const descriptionStyle = style([{}, limitTextLines({ line: 2 })]);

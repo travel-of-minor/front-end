@@ -1,4 +1,4 @@
-import { InternalLinkProps } from "@/type/internal-link-props";
+import { InternalLinkProps } from "@/type/util/internal-link-props";
 import Link from "next/link";
 import buttonStyle from "../../atom/button/button.css";
 import Image from "next/image";

@@ -1,9 +1,9 @@
-import TastePreview from "@/components/base/organism/taste-preview";
+import TreasurePreview from "@/components/base/organism/treasure-preview";
 import { Meta, StoryObj } from "@storybook/react";
 
 export default {
-  title: "Component/Base/Organism/TastePreview",
-  component: TastePreview,
+  title: "Component/Base/Organism/TreasurePreview",
+  component: TreasurePreview,
 } as Meta;
 
 type Story = StoryObj<Meta>;

@@ -1,5 +1,4 @@
 import { responsive } from "@/style/responsive.css";
-import colorThemeVar from "@/theme/color-theme.css";
 import { style } from "@vanilla-extract/css";
 
 export const imageContainerStyle = style({
