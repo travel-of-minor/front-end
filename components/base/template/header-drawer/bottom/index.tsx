@@ -3,7 +3,7 @@ import { bottomStyle, iconStyle, textStyle } from "./bottom.css";
 import Link from "next/link";
 import Button from "@/components/base/atom/button";
 
-const tmpData = ["나", "여행"];
+const tmpData = ["나의 바다", "타인의 바다"];
 
 export default function Bottom() {
   return (

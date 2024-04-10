@@ -25,7 +25,8 @@ export const userSectionStyle = style({
 export const nameStyle = style({
   width: "100%",
   margin: 0,
-  padding: `${sizeThemeVar.void[8]} 0`,
+  padding: `${sizeThemeVar.void[12]} 0`,
+  marginBottom: sizeThemeVar.void[12],
   borderBottom: `1px solid ${colorThemeVar.greys[300]}`,
   boxSizing:"border-box",
   fontWeight: typoThemeVar.weight.semiBold,

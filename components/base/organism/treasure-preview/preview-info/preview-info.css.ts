@@ -37,8 +37,8 @@ export const titleStyle = style([
 export const authorStyle = style({
   borderBottom: `1px solid ${colorThemeVar.greys[300]}`,
   width: "100%",
-  margin: `${sizeThemeVar.void[2]} 0`,
-  padding: `${sizeThemeVar.void[2]} 0`,
+  margin: `${sizeThemeVar.void[4]} 0`,
+  padding: `${sizeThemeVar.void[4]} 0`,
 });
 
 export const descriptionStyle = style([{}, limitTextLines({ line: 2 })]);

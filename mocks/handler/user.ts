@@ -87,6 +87,6 @@ export const userHandler = http.get(
     }
 
     // not found
-    return new HttpResponse(null, { status: 404 });
+    throw new HttpResponse(null, { status: 404 });
   }
 );

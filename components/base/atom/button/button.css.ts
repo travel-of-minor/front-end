@@ -37,7 +37,7 @@ const buttonStyle = recipe({
       },
       transparent: {
         background: "transparent",
-        border: "none",
+        borderColor: colorThemeVar.greys[300],
         color: "#fff"
       }
     },
@@ -59,7 +59,7 @@ const buttonStyle = recipe({
         minWidth: 110,
         borderRadius: `${sizeThemeVar.void[24]}`,
         fontSize: typoThemeVar.size.body1,
-        gap: sizeThemeVar.void[24],
+        gap: sizeThemeVar.void[16],
       },
     },
     fullWidth: {

@@ -15,6 +15,7 @@ export default function Top() {
         onClick={() => {
           setIsOpen(false);
         }}
+        flat
       />
     </div>
   );

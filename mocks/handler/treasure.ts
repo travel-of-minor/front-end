@@ -74,9 +74,9 @@ export const treasureHandler = http.get(
     }
 
     // not found
-    return new HttpResponse(null, {
+    throw new HttpResponse(null, {
       status: 404,
-      statusText: 'Hello world!',
-    })
+      statusText: "Hello world!",
+    });
   }
 );
