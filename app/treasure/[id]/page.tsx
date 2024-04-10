@@ -20,6 +20,7 @@ export default async function Page({ params }: PropType) {
         publisher={treasureData.publisher}
       />
       <UserSection
+        userId={treasureData.userId}
         userName={treasureData.userName}
         description={treasureData.description}
       />

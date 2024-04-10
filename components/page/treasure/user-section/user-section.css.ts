@@ -21,6 +21,7 @@ export const sectionStyle = style({
 export const userNameStyle = style({
     padding: 0,
     width: "100%",
+    color: "#fff",
     "@media":{
         [responsive.mobile]:{
             fontSize: typoThemeVar.size.h3,
