@@ -37,3 +37,7 @@ yarn-error.log*
 next-env.d.ts
 
 *storybook.log
+
+# mock
+/mocks
+/public/mockServiceWorker.js
