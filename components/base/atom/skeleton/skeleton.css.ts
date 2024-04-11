@@ -19,6 +19,7 @@ export const skeletonStyle = recipe({
       "75%": { width: "75%" },
       "50%": { width: "50%" },
       "25%": { width: "25%" },
+      "10%": {width: "10%"},
     },
     height: {
       "1em": { height: "1em" },

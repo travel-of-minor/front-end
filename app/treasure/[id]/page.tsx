@@ -1,5 +1,4 @@
 import InfoSection from "@/components/page/treasure/info-section";
-import { mainStyle } from "./page.css";
 import UserSection from "@/components/page/treasure/user-section";
 import { TreasureType } from "@/type/api/treasure";
 
@@ -12,7 +11,7 @@ export default async function Page({ params }: PropType) {
     `${process.env.NEXT_PUBLIC_API_URL}/treasure/${params?.id}`
   ).then((res) => res.json())) as TreasureType;
   return (
-    <main className={mainStyle}>
+    <>
       <InfoSection
         title={treasureData.title}
         author={treasureData.author}
@@ -24,6 +23,6 @@ export default async function Page({ params }: PropType) {
         userName={treasureData.userName}
         description={treasureData.description}
       />
-    </main>
+    </>
   );
 }

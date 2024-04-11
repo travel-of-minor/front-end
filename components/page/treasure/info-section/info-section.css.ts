@@ -66,3 +66,8 @@ export const publisherStyle = style({
     },
   },
 });
+
+export const skeletonPositionStyle = style({
+  display: "flex",
+  justifyContent:"center",
+}) 

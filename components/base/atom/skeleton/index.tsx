@@ -2,7 +2,7 @@ import { skeletonStyle } from "./skeleton.css";
 
 interface PropType {
   color?: "black" | "white";
-  width?: "100%" | "75%" | "50%" | "25%";
+  width?: "100%" | "75%" | "50%" | "25%" | "10%";
   height?: "100%" | "75%" | "50%" | "25%" | "1em";
 }
 
